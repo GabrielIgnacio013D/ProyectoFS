@@ -1,0 +1,106 @@
+services:
+  # -----------------------------------------------------------
+  # CONTENEDOR 1: LA BASE DE DATOS MYSQL
+  # -----------------------------------------------------------
+  db-servicio:
+    image: mysql:8.0
+    container_name: mysql_servidor
+    environment:
+      MYSQL_ROOT_PASSWORD: clave_maestra_root
+      MYSQL_DATABASE: universidad_backend
+      MYSQL_USER: desarrollador
+      MYSQL_PASSWORD: password_seguro_123
+    ports:
+      - "3306:3306"
+    networks:
+      - red_interna_proyecto
+    volumes:
+      - persistencia_db:/var/lib/mysql
+
+  # -----------------------------------------------------------
+  # CONTENEDOR 2: EL API GATEWAY (Punto de entrada único)
+  # -----------------------------------------------------------
+  api-gateway:
+    image: maven:3.9-eclipse-temurin-21
+    container_name: cont_gateway
+    ports:
+      - "8080:8080"  # Este será el puerto principal para Postman
+    depends_on:
+      - db-servicio
+      - eureka-server
+    networks:
+      - red_interna_proyecto
+    command: tail -f /dev/null
+    volumes:
+      - ./codigo-fuente/Api-Gateway:/app
+    working_dir: /app
+
+  # -----------------------------------------------------------
+  # CONTENEDOR 3: EL SERVIDOR DE DESCUBRIMIENTO EUREKA
+  # -----------------------------------------------------------
+  eureka-server:
+    image: maven:3.9-eclipse-temurin-21
+    container_name: servidor-eureka-cont
+    ports:
+      - "8761:8761"
+    depends_on:
+      - db-servicio
+    networks:
+      - red_interna_proyecto
+    command: tail -f /dev/null
+    volumes:
+      - ./codigo-fuente/servidor-eureka:/app
+    working_dir: /app/demo
+
+  # -----------------------------------------------------------
+  # CONTENEDOR 4: EL SERVICIO DE IDENTIDAD (AUTH + USUARIOS)
+  # -----------------------------------------------------------
+  servicio-identidad:
+    image: maven:3.9-eclipse-temurin-21
+    container_name: cont_identidad
+    ports:
+      - "8081:8080"
+    networks:
+      - red_interna_proyecto
+    command: tail -f /dev/null
+    volumes:
+      - ./codigo-fuente/servicio-identidad:/app
+    working_dir: /app
+
+  # -----------------------------------------------------------
+  # CONTENEDOR 5: EL SERVICIO DE MENU
+  # -----------------------------------------------------------
+  servicio-menu:
+    image: maven:3.9-eclipse-temurin-21
+    container_name: cont_menu
+    ports:
+      - "8082:8080"
+    networks:
+      - red_interna_proyecto
+    command: tail -f /dev/null
+    volumes:
+      - ./codigo-fuente/servicio-menu:/app
+    working_dir: /app
+
+  # -----------------------------------------------------------
+  # CONTENEDOR 6: EL SERVICIO DE MESAS
+  # -----------------------------------------------------------
+  servicio-mesas:
+    image: maven:3.9-eclipse-temurin-21
+    container_name: cont_mesas
+    ports:
+      - "8083:8080"
+    networks:
+      - red_interna_proyecto
+    command: tail -f /dev/null
+    volumes:
+      - ./codigo-fuente/servicio-mesas:/app
+    working_dir: /app
+
+networks:
+  red_interna_proyecto:
+    driver: bridge
+
+volumes:
+  persistencia_db:
+    driver: local
