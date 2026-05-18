@@ -1,0 +1,4 @@
+Host alias
+    HostName 18.209.11.201 
+    User ubuntu
+    IdentityFile C:\Users\gabo\.ssh\002D.pem
