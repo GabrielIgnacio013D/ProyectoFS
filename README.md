@@ -236,3 +236,8 @@ Lista de cotejo — Hito 2
 [x] El mapeo de datos síncrono por Feign Client gatilla las impresiones de trazas esperadas en la consola de ms-cocina.
 
 [x] El manejo de excepciones global evita caídas en cadena ante la ausencia de uno de los servicios (Resiliencia con código 503).
+
+
+Acceso Aws:
+ga.fuentess@duocuc.cl
+33mineros
