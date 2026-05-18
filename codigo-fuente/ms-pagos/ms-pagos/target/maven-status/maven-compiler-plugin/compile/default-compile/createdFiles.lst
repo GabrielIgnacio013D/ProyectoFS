@@ -1,0 +1,4 @@
+cl/duoc/ms_pagos/model/Pago.class
+cl/duoc/ms_pagos/controller/PagoController.class
+cl/duoc/ms_pagos/client/AdminFeignClient.class
+cl/duoc/ms_pagos/repository/PagoRepository.class

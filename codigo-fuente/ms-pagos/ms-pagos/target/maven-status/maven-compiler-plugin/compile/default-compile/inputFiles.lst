@@ -1,0 +1,5 @@
+/app/ms-pagos/src/main/java/cl/duoc/ms_pagos/MsPagosApplication.java
+/app/ms-pagos/src/main/java/cl/duoc/ms_pagos/client/AdminFeignClient.java
+/app/ms-pagos/src/main/java/cl/duoc/ms_pagos/controller/PagoController.java
+/app/ms-pagos/src/main/java/cl/duoc/ms_pagos/model/Pago.java
+/app/ms-pagos/src/main/java/cl/duoc/ms_pagos/repository/PagoRepository.java

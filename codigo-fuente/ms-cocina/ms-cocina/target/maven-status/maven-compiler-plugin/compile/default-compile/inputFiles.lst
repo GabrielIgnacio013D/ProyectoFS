@@ -1,0 +1,4 @@
+/app/ms-cocina/src/main/java/cl/duoc/ms_cocina/MsCocinaApplication.java
+/app/ms-cocina/src/main/java/cl/duoc/ms_cocina/controller/MenuController.java
+/app/ms-cocina/src/main/java/cl/duoc/ms_cocina/model/PlatoCocina.java
+/app/ms-cocina/src/main/java/cl/duoc/ms_cocina/repository/CocinaRepository.java

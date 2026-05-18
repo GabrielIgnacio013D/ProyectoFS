@@ -1,0 +1,10 @@
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/MsPedidosApplication.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/client/MenuClient.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/repository/PedidoRepository.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/dto/PlatoCocinaDTO.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/dto/PlatoDTO.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/controller/PedidoController.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/service/PedidoService.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/model/Pedido.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/client/CocinaFeignClient.java
+/app/ms-pedidos/src/main/java/cl/duoc/ms_pedidos/client/PagoFeignClient.java

@@ -1,0 +1,5 @@
+/app/ms-admin/src/main/java/cl/duoc/ms_admin/MsAdminApplication.java
+/app/ms-admin/src/main/java/cl/duoc/ms_admin/controller/AdminController.java
+/app/ms-admin/src/main/java/cl/duoc/ms_admin/controller/ContabilidadController.java
+/app/ms-admin/src/main/java/cl/duoc/ms_admin/model/Configuracion.java
+/app/ms-admin/src/main/java/cl/duoc/ms_admin/repository/ConfigRepository.java

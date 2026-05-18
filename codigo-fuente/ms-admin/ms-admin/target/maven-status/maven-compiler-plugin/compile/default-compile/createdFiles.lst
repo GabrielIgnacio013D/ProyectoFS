@@ -1,0 +1,5 @@
+cl/duoc/ms_admin/MsAdminApplication.class
+cl/duoc/ms_admin/controller/AdminController.class
+cl/duoc/ms_admin/controller/ContabilidadController.class
+cl/duoc/ms_admin/repository/ConfigRepository.class
+cl/duoc/ms_admin/model/Configuracion.class

@@ -1,0 +1,10 @@
+cl/duoc/ms_pedidos/MsPedidosApplication.class
+cl/duoc/ms_pedidos/client/CocinaFeignClient.class
+cl/duoc/ms_pedidos/service/PedidoService.class
+cl/duoc/ms_pedidos/client/PagoFeignClient.class
+cl/duoc/ms_pedidos/client/MenuClient.class
+cl/duoc/ms_pedidos/model/Pedido.class
+cl/duoc/ms_pedidos/dto/PlatoCocinaDTO.class
+cl/duoc/ms_pedidos/dto/PlatoDTO.class
+cl/duoc/ms_pedidos/controller/PedidoController.class
+cl/duoc/ms_pedidos/repository/PedidoRepository.class

@@ -1,0 +1,4 @@
+cl/duoc/ms_cocina/model/PlatoCocina.class
+cl/duoc/ms_cocina/MsCocinaApplication.class
+cl/duoc/ms_cocina/controller/MenuController.class
+cl/duoc/ms_cocina/repository/CocinaRepository.class

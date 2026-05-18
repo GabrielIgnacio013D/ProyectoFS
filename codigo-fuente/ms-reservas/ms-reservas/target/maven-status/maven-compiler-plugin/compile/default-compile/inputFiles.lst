@@ -1,0 +1,6 @@
+/app/ms-reservas/src/main/java/cl/duoc/ms_reservas/MsReservasApplication.java
+/app/ms-reservas/src/main/java/cl/duoc/ms_reservas/client/MesaClient.java
+/app/ms-reservas/src/main/java/cl/duoc/ms_reservas/controller/ReservaController.java
+/app/ms-reservas/src/main/java/cl/duoc/ms_reservas/dto/MesaDTO.java
+/app/ms-reservas/src/main/java/cl/duoc/ms_reservas/model/Reserva.java
+/app/ms-reservas/src/main/java/cl/duoc/ms_reservas/repository/ReservaRepository.java
