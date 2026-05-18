@@ -1,0 +1,6 @@
+cl/duoc/ms_reservas/MsReservasApplication.class
+cl/duoc/ms_reservas/model/Reserva.class
+cl/duoc/ms_reservas/client/MesaClient.class
+cl/duoc/ms_reservas/dto/MesaDTO.class
+cl/duoc/ms_reservas/controller/ReservaController.class
+cl/duoc/ms_reservas/repository/ReservaRepository.class
